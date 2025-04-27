@@ -27,3 +27,11 @@ function removeTodo(index) {
   todos.splice(index, 1); //splice는 배열에서 요소를 제거하는 메소드
   renderTodos(); //삭제하고 다시 렌더링
 }
+
+//js 1번 조건
+function enterKey(event) {
+  if (event.keyCode === 13) {
+    // Enter 키 = 13
+    addTodo();
+  }
+}

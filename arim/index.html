@@ -7,13 +7,25 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    <div>
-      <div id="가로">
-        <input type="text" id="todoInput" placeholder="할 일을 입력하세요" />
-        <button onclick="addTodo()" id="addTodo">추가</button>
-        <ul id="todoList"></ul>
+    <div id="all">
+      <div id="container">
+        <div id="addTodo">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder=" 할 일을 입력하세요"
+            onkeydown="enterKey(event)"
+          />
+          <button id="skybutton" onclick="addTodo()">추가</button>
+        </div>
+        <div id="List">
+          <ul id="todoList"></ul>
+        </div>
       </div>
+
+      <a href="../arim/HW/jsQuiz.html"> 자바스크립트 문제</a>
     </div>
   </body>
 </html>
