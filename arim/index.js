@@ -1,5 +1,6 @@
-const todos = []; //배열만듦듦
+const todos = []; //배열만듦 앞으로 todo여기에 저장.
 
+//input에 입력한 값을 todos배열에 추가하는 역할.
 function addTodo() {
   const input = document.getElementById('todoInput');
   const value = input.value.trim(); //trim 공백제거메소드
